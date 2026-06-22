@@ -1,0 +1,2 @@
+# Google Colab already ships numpy/pandas/scipy/matplotlib; the setup cell installs these:
+ipywidgets>=8.1

@@ -1,0 +1,39 @@
+{
+  "by_year": {
+    "2021": {
+      "n": 36499,
+      "pct_ex_ante": 100.0,
+      "pct_lookahead_cash_session": 0.0
+    },
+    "2022": {
+      "n": 36454,
+      "pct_ex_ante": 99.726,
+      "pct_lookahead_cash_session": 0.274
+    },
+    "2023": {
+      "n": 36531,
+      "pct_ex_ante": 99.726,
+      "pct_lookahead_cash_session": 0.274
+    },
+    "2024": {
+      "n": 36615,
+      "pct_ex_ante": 100.0,
+      "pct_lookahead_cash_session": 0.0
+    },
+    "2025": {
+      "n": 34800,
+      "pct_ex_ante": 100.0,
+      "pct_lookahead_cash_session": 0.0
+    },
+    "2026": {
+      "n": 15100,
+      "pct_ex_ante": 100.0,
+      "pct_lookahead_cash_session": 0.0
+    }
+  },
+  "overall": {
+    "pct_ex_ante": 99.898,
+    "pct_lookahead": 0.102
+  },
+  "source": "articles_scored.parquet (232,502 articles); split at 09:30 ET open"
+}

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+# JupyterLab 4 + ipywidgets 8 need no manual extension build; this is a no-op safety hook.
+python -c "import ipywidgets, jupyterlab; print('binder env ready:', ipywidgets.__version__, jupyterlab.__version__)"

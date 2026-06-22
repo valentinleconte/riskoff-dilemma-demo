@@ -1,0 +1,8 @@
+# pip equivalent (python -m venv .venv && pip install -r requirements.txt)
+numpy>=1.26,<2.0
+pandas>=2.2,<2.4
+scipy>=1.11
+matplotlib>=3.8
+ipywidgets>=8.1
+jupyterlab>=4.0
+notebook>=7.0

@@ -1,0 +1,17 @@
+# Optimized, pinned environment for the RiskOff Dilemma demo.
+# Used by (a) local conda/JupyterLab and (b) Binder (mybinder.org reads this).
+name: riskoff-demo
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy=1.26.*
+  - pandas=2.2.*
+  - scipy=1.13.*
+  - matplotlib=3.8.*
+  - ipywidgets=8.1.*
+  - jupyterlab=4.*
+  - notebook=7.*
+  - ipykernel
+  - pip
+  - pip:
+      - optuna==4.*   # optional; the demo runs without it (vectorbtpro is NOT required)
