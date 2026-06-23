@@ -3,7 +3,8 @@
 # publicly. A strong token is required for every connection.
 set -euo pipefail
 TOKEN="${JUPYTER_TOKEN:-$(python3 -c 'import secrets;print(secrets.token_urlsafe(32))')}"
+PORT="${JUPYTER_PORT:-8888}"
 echo "JupyterLab token: $TOKEN   (share this privately with your collaborator)"
-jupyter lab --no-browser --ip=127.0.0.1 --port=8888 \
+jupyter lab --no-browser --ip=127.0.0.1 --port="$PORT" \
   --ServerApp.token="$TOKEN" --ServerApp.allow_origin='*' \
-  --ServerApp.disable_check_xsrf=False
+  --ServerApp.allow_remote_access=True --ServerApp.disable_check_xsrf=False

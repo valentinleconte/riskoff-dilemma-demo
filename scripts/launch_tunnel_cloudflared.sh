@@ -6,5 +6,6 @@
 #   3) run this; share the printed https://<random>.trycloudflare.com URL + the Jupyter token
 set -euo pipefail
 command -v cloudflared >/dev/null || { echo "install cloudflared first"; exit 1; }
-cloudflared tunnel --url http://127.0.0.1:8888
+PORT="${JUPYTER_PORT:-8888}"
+cloudflared tunnel --url "http://127.0.0.1:$PORT"
 # Named tunnel + Zero-Trust (MFA, persistent hostname) — see ACCESS_AND_HOSTING.md §3.
